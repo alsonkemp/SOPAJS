@@ -1,0 +1,79 @@
+{% extends "templates/base.html" %}
+
+{% block body_content %}
+<div class="faq-page">
+    <div class="faq">
+        <h3 class="question">
+          How did SOPAJS know which state you were in?  Are you spying on me?
+        </h3>
+        <p>SOPAJS isn't spying on you.  The simple answer is that every time you connect to a website,
+            you send along an "IP address" which tells the receiving server how to send information back to you.
+            Since IP addresses are a limited resource and are distributed by a central authority, resources exist
+            which allow us to figure out roughly where your IP address is located.
+        <p>Note: the location is not very accurate.  According to my IP address, SOPAJS thinks my home's IP
+           address is from about 30 miles north.  SOPAJS just uses the location to try to get you relevant content (e.g.
+            your senators).
+    </div>
+
+    <div class="faq">
+        <h3 class="question">
+          Why build this?  Are you opposed to SOPA?
+        </h3>
+        <p>To be honest, I'm not hugely informed about SOPA, so can't oppose it strongly since that would be dishonest.
+               That said, SOPA has caused quite a stir and I'm very much in favor of SOPA being debated.
+        </p>
+        <p>SOPAJS is intended
+                to encourage discussion by making people aware of SOPA and of those who are for and against SOPA.
+                Hopefully, making more people aware of SOPA will assure that SOPA is a bill that is healthy for the
+                online community.
+        </p>
+    </div>
+
+    <div class="faq">
+        <h3 class="question">
+            My name, or my company name is listed and it should't be.  What do I do?
+        </h3>
+        <p>Submit an issue at the
+            <a href="http://github.com/alsonkemp/sopajs">Github</a> site or fork the code, fix it and
+            submit a pull request.
+    </div>
+
+    <div class="faq">
+        <h3 class="question">
+            SOPA sounds like a good or bad idea and I'd like to share my thoughts.
+        </h3>
+        <p>Sure.  Happy to add for or against arguments (to a reasonable degree).  See previous answer for how
+            to submit them.
+    </div>
+
+    <div class="faq">
+        <h3 class="question">
+            The code/design of the site and/or widget is/are terrible.  How can I help?
+        </h3>
+        <p>Help is welcome.  Head over to
+       <a href="http://github.com/alsonkemp/sopajs">GitHub</a>.
+    </div>
+
+    <div class="faq">
+        <h3 class="question">
+          But the domain was registered using GoDaddy!
+        </h3>
+        <p>Ironic, eh?  For more information on the irony see
+            <a href="http://venturebeat.com/2011/12/29/not-even-a-shift-to-full-sopa-opposition-can-stop-go-daddy-from-hemorrhaging-customers/">here</a>.
+    </div>
+
+    <div class="faq">
+        <h3 class="question">
+          It doesn't render correctly in IE.  What should I do?
+        </h3>
+        <p> Fork the project on GitHub (http://github.com/alsonkemp/sopajs), fix the issue and submit a pull request.
+    </div>
+
+    <div class="faq">
+        <h3 class="question">
+            Fork?  Pull request?  Sounds complicated!
+        </h3>
+        <p>    Maybe, but Google can help you.
+    </div>
+</div>
+{% endblock %}

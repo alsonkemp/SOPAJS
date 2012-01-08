@@ -1,0 +1,27 @@
+body {
+}
+
+.header {
+    margin: 20px;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.logo .smaller {
+    font-style: italic;
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+.footer {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.footer .attribution {
+    font-size: 16px;
+    font-style: italic;
+}

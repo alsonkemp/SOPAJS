@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>SOPA JS</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <script type="text/javascript" src="/sopa.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                SOPA JS <span class="smaller">- a bit of SOPA for every page</span>
+            </div>
+        </div>
+        <ul class="tabs">
+          <li {% if current_page=='/'    %}class="active"{% endif %}><a href="/">Home</a></li>
+          <li {% if current_page=='/use' %}class="active"{% endif %}><a href="/use">Use SOPAJS</a></li>
+          <li {% if current_page=='/faq' %}class="active"{% endif %}><a href="/faq">Frequency Asked Questions</a></li>
+        </ul>
+        {% block body_content %}{% endblock %}
+        <div class="footer">
+            <div style="width: 50%; float: left;">
+                <div class="attribution">Built using:</div>
+                <a href="http://code.google.com/appengine/"><img src="/img/appengine.jpg" style="height:50px;"/></a>
+                <a href="http://twitter.github.com/bootstrap/"><img src="/img/bootstrap.png" style="height:30px;"/></a>
+                <a href="http://python.org/"><img src="/img/python.png" style="height:40px;"/></a>
+            </div>
+            <div style="width: 50%; float: right;">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+                  <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a>
+                  <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">SOPAJS</span> by
+                  <a xmlns:cc="http://creativecommons.org/ns#" href="http://alsonkemp.com" property="cc:attributionName" rel="cc:attributionURL">Alson Kemp</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+                  Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://sopajs.org" rel="dct:source">sopajs.org</a>.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

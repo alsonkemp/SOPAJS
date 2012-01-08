@@ -1,0 +1,31 @@
+{% extends "templates/base.html" %}
+
+{% block body_content %}
+<div class="use-page">
+    <div>
+        <h3 class="question">
+            The basics?
+        </h3>
+        <p>SOPAJS is hosted by Google's AppEngine, so we need to use their servers to handle
+        SSL connections.
+        <p>Just include the following somewhere in the &lang;head&rang; of your site
+        (note: using "//" instead of "http://" is a way of supporting both HTTP and HTTPS):
+        <pre>{{'<script type="text/javascript" src="//sopajs.appspot.com/sopa.js"></script>'|forceescape}}</pre>
+
+        <h3 class="question">
+            Options
+        </h3>
+        <p>The SOPAJS script accepts a number of options:
+        <dl>
+          <dt>background_color</dt>
+          <dd>The background color for the header.  Use valid HTML colors *without* the hash (#).  e.g. 888 (not #888).</dd>
+          <dt>topic</dt>
+          <dd>The topic to display.  Valid values: politics, media, companies.</dd>
+        </dl>
+        <p>Example:
+        <pre>{{'<script type="text/javascript" src="//sopajs.appspot.com/sopa.js?background_color=888"></script>'|forceescape}}</pre>
+
+    </div>
+
+</div>
+{% endblock %}
